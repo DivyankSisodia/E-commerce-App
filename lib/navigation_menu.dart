@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/get_core.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:myecommerce/features/shop/screens/home/home.dart';
 import 'package:myecommerce/utils/constants/colors.dart';

@@ -9,6 +9,8 @@ import 'package:myecommerce/utils/constants/image_string.dart';
 import 'package:myecommerce/utils/constants/sizes.dart';
 
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
+import '../../../../common/widgets/layout/grid_layout.dart';
+import '../../../../common/widgets/products/product_cards/product_card_vertical.dart';
 import 'widgets/home_appbar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -16,23 +18,23 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            PrimaryHeaderContainer(
+            const PrimaryHeaderContainer(
               child: Column(
                 children: [
                   HomeAppBar(),
                   SizedBox(
-                    height: TSizes.spaceBtwSections,
+                    height: TSizes.spaceBtwSections * 0.7,
                   ),
                   SearchContainer(
                     title: 'Search in Store',
                     icon: Iconsax.search_normal,
                   ),
                   SizedBox(
-                    height: TSizes.spaceBtwSections,
+                    height: TSizes.spaceBtwSections * 0.8,
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
@@ -54,12 +56,22 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(TSizes.defaultSpace),
-              child: TPromoSlider(
-                banners: [
-                  TImages.promoBanner1,
-                  TImages.promoBanner2,
-                  TImages.promoBanner3
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: Column(
+                children: [
+                  const TPromoSlider(
+                    banners: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3
+                    ],
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+
+                  // Product cards
+                  GridLayout(
+                      itemCount: 4,
+                      itemBuilder: (_, index) => const ProductCardVertical()),
                 ],
               ),
             )
