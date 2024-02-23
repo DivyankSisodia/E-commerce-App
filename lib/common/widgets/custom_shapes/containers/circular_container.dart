@@ -10,6 +10,7 @@ class ColorContainer extends StatelessWidget {
     this.radius = 400,
     this.padding = 0,
     this.child,
+    this.margin,
     this.backgroundColor = TColors.white,
   });
 
@@ -18,6 +19,7 @@ class ColorContainer extends StatelessWidget {
   final double radius;
   final double padding;
   final Widget? child;
+  final EdgeInsets? margin;
   final Color backgroundColor;
 
   @override
@@ -25,6 +27,7 @@ class ColorContainer extends StatelessWidget {
     return Container(
       height: height,
       width: width,
+      margin: margin,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),

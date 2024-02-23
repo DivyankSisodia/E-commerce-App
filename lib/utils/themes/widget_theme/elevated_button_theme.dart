@@ -19,7 +19,8 @@ class TElevatedButtonTheme {
       textStyle: const TextStyle(
           fontSize: 16, color: TColors.textWhite, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+        borderRadius: BorderRadius.circular(TSizes.buttonRadius),
+      ),
     ),
   );
 
@@ -36,7 +37,8 @@ class TElevatedButtonTheme {
       textStyle: const TextStyle(
           fontSize: 16, color: TColors.textWhite, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+        borderRadius: BorderRadius.circular(TSizes.buttonRadius),
+      ),
     ),
   );
 }

@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:myecommerce/common/widgets/login_signup/Login_socialicons.dart';
-import 'package:myecommerce/common/widgets/login_signup/login_formDivider.dart';
 import 'package:myecommerce/features/authentication/screen/signup.widgets/signup_form.dart';
-import 'package:myecommerce/utils/constants/colors.dart';
 import 'package:myecommerce/utils/constants/sizes.dart';
 import 'package:myecommerce/utils/constants/text_string.dart';
 import 'package:myecommerce/utils/helpers/helper_functions.dart';

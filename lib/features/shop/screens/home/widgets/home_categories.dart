@@ -12,16 +12,17 @@ class home_categories extends StatelessWidget {
     return SizedBox(
       height: 90,
       child: ListView.builder(
-          shrinkWrap: true,
-          itemCount: 6,
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (_, index) {
-            return VerticalImage(
-              image: TImages.shoeIcon,
-              title: 'Shoes',
-              onTap: () {},
-            );
-          }),
+        shrinkWrap: true,
+        itemCount: 6,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (_, index) {
+          return VerticalImage(
+            image: TImages.shoeIcon,
+            title: 'Shoes',
+            onTap: () {},
+          );
+        },
+      ),
     );
   }
 }

@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:myecommerce/features/authentication/screen/login/widgets/login.dart';
 
-import '../../../../common/widgets/success_screen/success_screen.dart';
 import '../../../../utils/constants/image_string.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/text_string.dart';

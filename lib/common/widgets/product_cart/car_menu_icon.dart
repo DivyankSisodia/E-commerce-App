@@ -17,11 +17,12 @@ class CardCounterIcon extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-            onPressed: onPressed,
-            icon: Icon(
-              Iconsax.shopping_bag,
-              color: iconColor,
-            )),
+          onPressed: onPressed,
+          icon: Icon(
+            Iconsax.shopping_bag,
+            color: iconColor,
+          ),
+        ),
         Positioned(
           right: 0,
           child: Container(
@@ -32,13 +33,14 @@ class CardCounterIcon extends StatelessWidget {
               borderRadius: BorderRadius.circular(100),
             ),
             child: Center(
-                child: Text(
-              '2',
-              style: Theme.of(context)
-                  .textTheme
-                  .labelSmall!
-                  .apply(color: Colors.white),
-            )),
+              child: Text(
+                '2',
+                style: Theme.of(context)
+                    .textTheme
+                    .labelSmall!
+                    .apply(color: Colors.white),
+              ),
+            ),
           ),
         ),
       ],
