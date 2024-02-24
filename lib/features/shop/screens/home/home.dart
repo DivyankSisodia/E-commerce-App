@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         SectionHeading(
-                          title: 'Popluar Categories',
+                          title: 'Popular Categories',
                           showActionButton: false,
                           textColor: TColors.white,
                         ),
@@ -66,6 +66,16 @@ class HomeScreen extends StatelessWidget {
                       TImages.promoBanner3
                     ],
                   ),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+
+                  // Heading
+                  SectionHeading(
+                    title: 'Popular Products',
+                    showActionButton: true,
+                    textColor: TColors.black,
+                    onButtonPressed: () {},
+                  ),
+
                   const SizedBox(height: TSizes.spaceBtwItems),
 
                   // Product cards
