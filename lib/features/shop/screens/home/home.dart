@@ -72,7 +72,6 @@ class HomeScreen extends StatelessWidget {
                   SectionHeading(
                     title: 'Popular Products',
                     showActionButton: true,
-                    textColor: TColors.black,
                     onButtonPressed: () {},
                   ),
 
